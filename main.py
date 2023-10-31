@@ -1,6 +1,5 @@
 import streamlit as st
 import requests
-from streamlit_chat import message
 import json
 
 st.set_page_config(page_title="Weather App")
@@ -36,7 +35,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.title("Live weather powered by weatherapi")
+st.title("Live weather powered by WeatherAPI")
 
 city = st.text_input("Enter a city name", "New York")
 weather_data = {}
